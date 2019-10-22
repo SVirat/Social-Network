@@ -34,8 +34,8 @@
         <div class="about-info">
             This is a personal project which is a replica of Facebook. It was built with PHP and JavaScript at the back-end, and 
             HTML & CSS at the front-end.<br><br>
-            You can do all of the basic features of a social media site. Features include sign-up and login, posts, messages, notifications,
-            friends, and so on. I also designed the database system for this project, and ensured ACID properties.<br><br>
+            You can all features of a social media site, including sign-up and login, posts, messages, notifications,
+            friend connections, and so on. I also designed the database system for this project, and ensured ACID properties.<br><br>
             To see the full code base, visit the <a href="https://github.com/SVirat/social-network" target="_blank">github repo</a>. I've explained the DBMS I created for the project and the general code structure.<br><br>
             To learn more about me and my profile, visit my personal portfolio site: <a href="https://svirat.github.io" target="_blank">svirat.github.io</a>.
         </div>
