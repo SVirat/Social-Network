@@ -1,0 +1,137 @@
+:root {
+    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --red-color: #FF073A;
+    --blue-color: blue;
+    --dark-blue-color: darkblue;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+#pending-requests {
+    width: 60%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 15%;
+    background-color: #F2F3F4;
+    padding: 2%;
+    border-radius: 10px;
+    z-index: -1;
+    text-align: left;
+}
+
+#friend-list {
+    width: 60%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 15%;
+    background-color: #F2F3F4;
+    padding: 2%;
+    border-radius: 10px;
+    z-index: -1;
+    text-align: left;
+}
+
+.friend {
+    padding: 1%;
+}
+
+.friend .friend-profile-pic {
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    margin-bottom: 1%;
+    display:inline-block;
+}
+
+.friend .friend-content {
+    display: inline-block;
+    width: 90%;
+}
+
+.friend .friend-content .friend-name {
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left;
+    float: left;
+}
+
+.friend .friend-content .friends-since {
+    align-items: right;
+    text-align: right;
+    float: right;
+}
+
+.post .mutual-friends {
+    text-align: left;
+}
+
+.mutual-friends-shower {
+    background: #cccccc;
+    width: 80%;
+    margin: 0 auto;
+    margin-left:7%;
+    padding: 1%;
+    display: inline-block;
+
+}
+
+.mut-friend-content {
+    display: inline-block;
+    width: 90%;
+}
+
+.mutual-friends-shower .mut-friend-pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-bottom: 1%;
+}
+
+.mutual-friends-shower .mut-friend-content .mut-friend-name {
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left;
+    float: left;
+}
+
+.mutual-friends-shower .mut-friend-content .mut-friends-since {
+    align-items: right;
+    text-align: right;
+    float: right;
+}
+
+#pending-requests .safe {
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    transition: 0.3s;
+}
+#pending-requests .safe:hover {
+    background: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    transition: 0.3s;
+}
+
+#pending-requests .extreme {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    transition: 0.3s;
+}
+#pending-requests .extreme:hover {
+    background: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    transition: 0.3s;
+}

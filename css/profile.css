@@ -1,0 +1,142 @@
+#profile-page {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+#profile-left {
+    width: 10%;
+    height: 60%;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    background: #F2F3F4;
+    padding: 2%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+#profile-left img {
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10%;
+}
+
+#profile-left .safe {
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4%;
+    transition: 0.3s;
+}
+
+.safe {
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4%;
+    transition: 0.3s;
+}
+
+#profile-left .safe:hover {
+    background: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4%;
+    transition: 0.3s;
+}
+
+.safe:hover {
+    background: darkblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4%;
+    transition: 0.3s;
+}
+
+#profile-left .extreme {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    padding: 4%;
+}
+
+#profile-left .extreme:hover {
+    background: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    padding: 4%;
+}
+
+#profile-main {
+    background: #F2F3F4;
+    margin-left: 22%;
+    margin-right: 10%;
+    margin-top: 2%;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.post {
+    padding: 1%;
+}
+
+#profile-name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: blue;
+    font-size: 20px;
+}
+
+.profile-info-inner {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: blue;
+}
+
+#activity-announce {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.post-profile-pic {
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    margin-bottom: 2%;
+    display: inline-block;
+}
+
+.post-content {
+    display: inline-block;
+    width: 90%;
+}
+
+.post .post-content .post-user-name {
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left;
+    float: left;
+    margin-top: 2%;
+}
+
+.post .post-content .post-time {
+    align-items: right;
+    text-align: right;
+    float: right;
+    
+    margin-top: 2%;
+}
+
+.post .post-text {
+    text-align: left;
+    
+    margin-top: 2%;
+}

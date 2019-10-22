@@ -1,0 +1,94 @@
+#centerer {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 15%;
+    background-color: #F2F3F4;
+    padding: 2%;
+    border-radius: 10px;
+    z-index: -1;
+    display: inline-block;
+    text-align: left;
+}
+
+
+#centerer .current-message .message-content {
+    width: 80%;
+}
+
+#centerer .current-message {
+    display: inline-block;
+    width: 65%;
+    /*border-left: 1px solid black;*/
+}
+
+#centerer .current-message .message-pic {
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    margin-bottom: 1%;
+    display:inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#centerer .current-message .message-content {
+    display:inline-block;
+}
+
+#centerer .current-message .message-content .message-textarea {
+    width: 80%;
+}
+
+#centerer .current-message .message-content .message-submit {
+    border-radius: 10px;
+    background: blue;
+    margin-left: 1.5%;
+    border-radius: 5%;
+    padding: 8px 15px 8px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer; 
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+#centerer .current-message .message-content .message-submit:hover {
+    border-radius: 10px;
+    background: darkblue;
+    margin-left: 1.5%;
+    border-radius: 5%;
+    padding: 8px 15px 8px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer; 
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.loaded-messages {
+    max-height: 400px;
+    height: 65%;
+    min-height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.message {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 2%;
+    color: white;
+}
+
+.message#blue {
+    background: blue;
+    float: right;
+    margin-right: 2%;
+}
+
+.message#green {
+    background: #4cd137;
+    float: left;
+}

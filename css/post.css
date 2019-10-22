@@ -1,0 +1,251 @@
+:root {
+    --classy-font: 'Segoe UI', cursive;
+    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    --background-color: #F2F3F4;
+    --red-color: #FF073A;
+    --navbar-highlight-color: #0080FF;
+    --blue-color: blue;
+    --dark-blue-color: darkblue;
+}
+
+body {    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #F2F3F4;
+    padding: 0;
+    margin: 0;
+}
+
+.post {
+    padding: 1%;
+}
+
+.post .index-profile-pic {
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    margin-bottom: 1%;
+    display:inline-block;
+}
+
+.post .index-content {
+    width: 90%;
+}
+
+.post .index-content .index-time {
+    align-items: right;
+    text-align: right;
+    float: right;
+}
+
+.post .index-content .index-user-name {
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left;
+    float: left;
+}
+
+.post .index-text {
+    text-align: left;
+}
+
+
+#index-main-wrapper {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+}
+
+#centerer {
+    text-align: center;
+}
+
+#index-post {
+    width: 90%;
+    margin-bottom: 2%;
+    background-color: var(--background-color);
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-radius: 10px;
+    z-index: -1;
+    display: inline-block;
+}
+
+#index-main-panel {
+    width: 90%;
+    margin-bottom: 2%;
+    background-color: var(--background-color);
+    padding: 2%;
+    border-radius: 10px;
+    z-index: -1;
+    text-align: center;
+    display: inline-block;
+}
+
+#index-main-panel h1, h2 {
+    float: left;
+}
+
+#index-form {
+    align-items: center;
+    text-align: center;
+}
+
+#index-form textarea {
+    width: 80%;
+}
+
+#loading {
+    height: 10%;
+    width: auto;
+}
+
+
+/** Comments */
+
+.post .post-comment {
+    font-family: var(--primary-font);
+    display: inline-block;
+    width: 90%;
+    border-radius: 10px;
+}
+
+ #comment_iframe {
+    font-family: var(--primary-font);
+    display: inline-block;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.comment_form {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+}
+
+.comment-submit {
+    border-radius: 10px;
+    background: var(--blue-color);
+    margin-left: 1.5%;
+    border-radius: 5%;
+    padding: 8px 15px 8px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer; 
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+ .comment-submit:hover {
+    background: var(--dark-blue-color);
+    border-radius: 5%;
+    margin-left: 1.5%;
+    text-align: center;
+    align-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer; 
+    box-shadow: none;
+    border: none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    transition: 0.3s;
+}
+
+.comment_form textarea {
+    width: 80%;
+    height: auto;
+    display: inline-block;
+    border-radius: 5px;
+    
+}
+
+.comment_section {
+    font-family: var(--primary-font);
+    display: inline-block;
+    width: 90%;
+}
+
+.comment_section img {
+    width: 60px; height: 60px;
+    width: auto;
+    border-radius: 50%;
+    margin-bottom: 1%;
+    display:inline-block;
+}
+
+.comment_section .comment-content {
+    display: inline-block;
+    width: 90%;
+}
+
+.comment_section .comment-content .comment-time {
+    align-items: right;
+    text-align: right;
+    float: right;
+}
+
+.comment_section .comment-content .comment-user-name {
+    font-weight: bold;
+    vertical-align: top;
+    text-align: left;
+    float: left;
+}
+
+.like-value {
+    background: red;
+}
+
+
+.like_button {
+    background: var(--blue-color);
+    border-radius: 5%;
+    padding: 8px 15px 8px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer; 
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+    margin-left: 1.5%;
+}
+
+.like_button:hover {
+    background: var(--dark-blue-color);
+    border-radius: 5%;
+    margin-left: 1.5%;
+    text-align: center;
+    align-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer; 
+    box-shadow: none;
+    border: none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    transition: 0.3s;
+}
+
+.comment_section .comment-text {
+    text-align: left;
+}
+
+.likes-stuff .like-iframe {
+    height: 22px;
+    width: 100px;
+    border:none;
+}
+
+.extreme {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    transition: 0.3s;
+}
+.extreme:hover {
+    background: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    transition: 0.3s;
+}
