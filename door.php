@@ -30,11 +30,14 @@
         </h1>
         <br>
         <div class="about-info">
-            This is a personal project social media website which replicates many of the features of Facebook and Twitter. It was built with PHP and JavaScript at the back-end, and 
-            HTML & CSS at the front-end.<br><br>
-            You can perform all features of a social media site, including sign-up and login, posts, messages, notifications,
-            friend connections, and so on. I also designed the database system for this project, and ensured ACID properties.<br><br>
-            To see the full code base, visit the <a href="https://github.com/SVirat/social-network" target="_blank">github repo</a>. I've explained the DBMS I created for the project and the general code structure.<br><br>
+            PalWeb is a personal project which replicates the features of other social media sites like Facebook and Twitter, including 
+            activities such as adding and deleting posts and comments, liking other posts, adding and removing friends, 
+            calculating mutual friends, receiving notifications, searching for other users, and so on.<br><br>
+            It was built in the back-end with PHP and JavaScript, and in the front-end with HTML and CSS. Ajax calls are used to 
+            dynamically feed the user data from the database. The database was also designed with ACID properties in mind, 
+            with an emphasis on minimizing redundancy and maximizing consistency.<br><br>
+            To see the full code base and view the DBMS schema, visit the <a href="https://github.com/SVirat/social-network" target="_blank">github repo</a>. 
+            <br><br>
             To learn more about me and my profile, visit my personal portfolio site: <a href="https://svirat.github.io" target="_blank">svirat.github.io</a>.
         </div>
     </div>
