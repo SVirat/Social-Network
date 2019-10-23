@@ -39,7 +39,7 @@ else {
     <link rel="stylesheet" type="text/css" href="./css/post.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 
-    <title>Homepage</title>
+    <title>PalWeb</title>
 
 </head>
 
