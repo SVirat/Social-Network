@@ -35,7 +35,7 @@ if($query != "") {
         $other_name = $row["first_name"] . " " . $row["last_name"];
 
         echo "<div class='resultDisplay' style='background:#F2F3F4;'>
-                <a href='$other_handle' style='color:#1485BD;width:90%'>
+                <a href='profile.php?profile_handle=$other_handle' style='color:#1485BD;width:90%'>
                     <div class='liveSearchProfilePic'>
                         <img src='$other_profile_pic' style='height:40px;width:40px;border-radius:50%;float: left;'>
                     </div>
