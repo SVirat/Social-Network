@@ -71,7 +71,7 @@ else {
         </div>
 
         <div id="icons" class="icons" style='display:inline-block;'>
-            <a href=<?php echo $user['handle']; ?> id="profile"><i class="fa fa-user fa-lg"></i></a>
+            <a href="profile.php?profile_handle=<?php echo $user['handle']; ?>" id="profile"><i class="fa fa-user fa-lg"></i></a>
             <a href="index.php" class="active" id="index"><i class="fa fa-home fa-lg"></i></a>
             <a href="javascript:void(0);" onclick="getDropdownData('<?php echo $user_handle; ?>');" id="messages"><i class="fa fa-comments fa-lg"></i></a>
             <?php
