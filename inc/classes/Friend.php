@@ -145,7 +145,7 @@ class Friend {
 
             $str .= 
             "<div class='friend'>
-                <a href='$friend_handle' style='padding-right:1%;'><img class='friend-profile-pic' src='$friend_profile_pic'/></a>
+                <a href='profile.php?profile_handle=$friend_handle' style='padding-right:1%;'><img class='friend-profile-pic' src='$friend_profile_pic'/></a>
                 <div class='friend-content'>
                     <div class='friend-name'><a href='profile.php?profile_handle=$friend_handle'>$friend_name</a></div>
                     <div class='friends-since' ><span style='font-weight:bold;'>$added_or_pending_since:</span> $time_added</div><br>
