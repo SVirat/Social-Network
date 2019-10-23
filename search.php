@@ -102,12 +102,12 @@ else {
                             </div>
 
                             <div class='result_profile_pic' style='display:inline-block;margin-left:10%;margin-right:10px;margin-top:2%;'>
-                                <a href='$other_handle'><img src='$other_profile_pic' style='height:100px;width:100px;border-radius:50%;'></a>
+                                <a href='profile.php?profile_handle=$other_handle'><img src='$other_profile_pic' style='height:100px;width:100px;border-radius:50%;'></a>
                             </div>
 
                             <div class='search-text-content' style='display:inline-block;margin-top:2%;'>
                             
-                                <a href='$other_handle'><b>$other_name</b><br>
+                                <a href='profile.php?profile_handle=$other_handle'><b>$other_name</b><br>
                                     <span style='color:grey;'> Handle: ".$other_handle."</span>
                                 </a><br>
                                 $mutual_friends<br>
