@@ -11,7 +11,7 @@
     <script src="js/door.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-        <title>Social Media Site</title>
+        <title>PalWeb</title>
         <link rel="stylesheet" type="text/css" href="./css/door.css">
     </head>
 
