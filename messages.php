@@ -58,10 +58,10 @@ if(isset($_POST["new_messager"])) {
         $receiver_name = $receiver_obj->get_name();
         $receiver_prof_pic = $receiver_obj->get_profile_pic();
         // <a href='$poster_handle' style='float:left;padding-right:1%;'><img class='index-profile-pic' src='$poster_prof_pic'/></a>
-        echo "<a href='$receiver_handle'><img class='message-pic' src='$receiver_prof_pic'></a>
+        echo "<a href='profile.php?profile_handle=$receiver_handle'><img class='message-pic' src='$receiver_prof_pic'></a>
                 <div class='message-content'>";
 
-        echo "<a href='$receiver_handle'><h4>$receiver_name</h4></a>";
+        echo "<a href='profile.php?profile_handle=$receiver_handle'><h4>$receiver_name</h4></a>";
         echo "<div class='loaded-messages' id='scroll-messages'>";
             echo $message_obj->get_messages($receiver_handle);
         echo "</div>";
