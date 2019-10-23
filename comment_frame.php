@@ -163,13 +163,13 @@
                 <br>
                 <div class="comment_section" id="commie">
                     <hr>
-                    <a href="<?php echo $commenter?>" target="_parent">
+                    <a href="profile.php?profile_handle=<?php echo $commenter?>" target="_parent">
                         <div class="comment-profile-pic">
                         
                         <img src="<?php echo $user_obj->get_profile_pic();?>" title="<?php echo $commenter;?>" class="comment-profile-pic" style="float:left;width: 50px;padding-left:1%;padding-right:1%;height: 50px;border-radius:50%;">
                         </div>
                         <div class="comment-content">
-                            <a href="<?php echo $commenter?>" target="_parent" class="comment-user-name" style="font-family:'Candara';text-decoration:none;"><b><?php echo $user_obj->get_name();?></b></a>
+                            <a href="profile.php?profile_handle=<?php echo $commenter?>" target="_parent" class="comment-user-name" style="font-family:'Candara';text-decoration:none;"><b><?php echo $user_obj->get_name();?></b></a>
                             <div class="comment-time" style="font-family:'Candara';"><b><?php echo $time_message; ?></b>  <?php
                         if($user_handle == $commenter) {
                             echo "<form method='POST' >
