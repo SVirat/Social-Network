@@ -28,7 +28,7 @@ if(isset($_POST["remove_friend"])) {
     $user_handle = $user['handle'];
     $remover_obj = new Friend($con, $user_handle);
     $remover_obj->delete_friend($profile_handle);
-    header("Location: $profile_handle");
+    header("Location: profile.php?profile_handle=$profile_handle");
     exit();
 }
 
@@ -36,7 +36,7 @@ if(isset($_POST["add_friend"])) {
     $user_handle = $user['handle'];
     $remover_obj = new Friend($con, $user_handle);
     $remover_obj->send_friend_request($profile_handle);
-    header("Location: $profile_handle");
+    header("Location: profile.php?profile_handle=$profile_handle");
     exit();
 }
 
@@ -44,7 +44,7 @@ if(isset($_POST["accept_friend_req"])) {
     $user_handle = $user['handle'];
     $remover_obj = new Friend($con, $user_handle);
     $remover_obj->accept_friend_request($profile_handle);
-    header("Location: $profile_handle");
+    header("Location: profile.php?profile_handle=$profile_handle");
     exit();
 }
 
