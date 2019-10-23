@@ -16,11 +16,11 @@
     </head>
 
 <body>
-<header id="navbar">
-    <a href="#about" id="about-navbar"  onclick="show(this.id);changeActive(this.id);">About</a>
-    <a href="#login" id="login-navbar" class="active" onclick="show(this.id);changeActive(this.id);">Login</a>
-    <a href="#sign-up" id="signup-navbar" onclick="show(this.id);changeActive(this.id);">Sign Up</a>
-</header>
+    <header id="navbar">
+        <a href="#about" id="about-navbar"  onclick="show(this.id);changeActive(this.id);">About</a>
+        <a href="#login" id="login-navbar" class="active" onclick="show(this.id);changeActive(this.id);">Login</a>
+        <a href="#sign-up" id="signup-navbar" onclick="show(this.id);changeActive(this.id);">Sign Up</a>
+    </header>
     
     <!-- About Section -->
     <div id="about" style="display:none">
