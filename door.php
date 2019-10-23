@@ -34,7 +34,7 @@
             activities such as adding and deleting posts and comments, liking other posts, adding and removing friends, 
             calculating mutual friends, receiving notifications, searching for other users, and so on.<br><br>
             It was built in the back-end with PHP and JavaScript, and in the front-end with HTML and CSS. Ajax calls are used to 
-            dynamically feed the user data from the database. The database was also designed with ACID properties in mind, 
+            dynamically feed the user data from the server. The database was also designed with ACID properties in mind, 
             with an emphasis on minimizing redundancy and maximizing consistency.<br><br>
             To see the full code base and view the DBMS schema, visit the <a href="https://github.com/SVirat/social-network" target="_blank">github repo</a>. 
             <br><br>
