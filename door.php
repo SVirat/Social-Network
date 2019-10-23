@@ -21,8 +21,6 @@
     <a href="#login" id="login-navbar" class="active" onclick="show(this.id);changeActive(this.id);">Login</a>
     <a href="#sign-up" id="signup-navbar" onclick="show(this.id);changeActive(this.id);">Sign Up</a>
 </header>
-
-<body onload="load();">
     
     <!-- About Section -->
     <div id="about" style="display:none">
