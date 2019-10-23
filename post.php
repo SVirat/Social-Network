@@ -65,9 +65,9 @@ $id = -1;
         
                         echo
                         "<div class='post' style='background:#F2F3F4;border-radius:10px;'>
-                            <a href='$poster_handle' style='float:left;padding-right:1%;'><img class='index-profile-pic' src='$poster_prof_pic'/></a>
+                            <a href='profile.php?profile_handle=$poster_handle' style='float:left;padding-right:1%;'><img class='index-profile-pic' src='$poster_prof_pic'/></a>
                             <div class='index-content'>
-                                <div class='index-user-name'><a href='$poster_handle'>$poster_name</a></div>
+                                <div class='index-user-name'><a href='profile.php?profile_handle=$poster_handle'>$poster_name</a></div>
                                 <div class='index-time' style='font-weight:bold;'>$time_of_post</div><br>
                                 <div class='index-text'>$text</div>
                             </div>";
