@@ -97,9 +97,9 @@ View <a href='friends.php'>Friends</a>
 
                     echo
                     "<div class='friend'>
-                        <a href='$friend_handle' style='padding-right:1%;'><img class='friend-profile-pic' src='$friend_profile_pic'/></a>
+                        <a href='profile.php?profile_handle=$friend_handle' style='padding-right:1%;'><img class='friend-profile-pic' src='$friend_profile_pic'/></a>
                         <div class='friend-content'>
-                            <div class='friend-name'><a href='$friend_handle'>$friend_name</a></div>
+                            <div class='friend-name'><a href='profile.php?profile_handle=$friend_handle'>$friend_name</a></div>
                             <div class='friends-since' ><span style='font-weight:bold;'>Pending since:</span> $time_added</div><br>
                             <div class='mutual-friends' onclick='toggleMutualShower("."\"".$friend_handle."\"".");'><span style='font-weight:bold;cursor:pointer;color:blue' >Mutual friends:</span> $num_mutual_friends</div>
                             <form method='POST'>";
@@ -139,9 +139,9 @@ View <a href='friends.php'>Friends</a>
 
                        echo "
                         
-                            <a href='$mut_friend_handle' style='padding-right:1%;'><img class='mut-friend-pic' src='$mut_friend_pic'/></a>
+                            <a href='profile.php?profile_handle=$mut_friend_handle' style='padding-right:1%;'><img class='mut-friend-pic' src='$mut_friend_pic'/></a>
                             <div class='mut-friend-content'>
-                                <div class='mut-friend-name'><a href='$mut_friend_handle'>$mut_friend_name</a></div>
+                                <div class='mut-friend-name'><a href='profile.php?profile_handle=$mut_friend_handle'>$mut_friend_name</a></div>
                                 <div class='mut-friends-since' ><span style='font-weight:bold;'>Added:</span> $mut_friend_time</div>
                             </div>";
                             if($i > 0) {
@@ -210,9 +210,9 @@ View <a href='friends.php'>Friends</a>
 
                     echo
                     "<div class='friend'>
-                        <a href='$friend_handle' style='padding-right:1%;'><img class='friend-profile-pic' src='$friend_profile_pic'/></a>
+                        <a href='profile.php?profile_handle=$friend_handle' style='padding-right:1%;'><img class='friend-profile-pic' src='$friend_profile_pic'/></a>
                         <div class='friend-content'>
-                            <div class='friend-name'><a href='$friend_handle'>$friend_name</a></div>
+                            <div class='friend-name'><a href='profile.php?profile_handle=$friend_handle'>$friend_name</a></div>
                             <div class='friends-since' ><span style='font-weight:bold;'>Pending since:</span> $time_added</div><br>
                             <div class='mutual-friends' onclick='toggleMutualShower("."\"".$friend_handle."\"".");'><span style='font-weight:bold;cursor:pointer;color:blue' >Mutual friends:</span> $num_mutual_friends</div>
                             <form method='POST'>";
@@ -252,9 +252,9 @@ View <a href='friends.php'>Friends</a>
 
                        echo "
                         
-                            <a href='$mut_friend_handle' style='padding-right:1%;'><img class='mut-friend-pic' src='$mut_friend_pic'/></a>
+                            <a href='profile.php?profile_handle=$mut_friend_handle' style='padding-right:1%;'><img class='mut-friend-pic' src='$mut_friend_pic'/></a>
                             <div class='mut-friend-content'>
-                                <div class='mut-friend-name'><a href='$mut_friend_handle'>$mut_friend_name</a></div>
+                                <div class='mut-friend-name'><a href='profile.php?profile_handle=$mut_friend_handle'>$mut_friend_name</a></div>
                                 <div class='mut-friends-since' ><span style='font-weight:bold;'>Added:</span> $mut_friend_time</div>
                             </div>";
                             if($i > 0) {
