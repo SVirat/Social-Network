@@ -328,7 +328,7 @@ class User {
                 $str .= 
 
                 "<div class='post'>
-                    <a href='$poster_handle' style='padding-right:1%;'><img class='post-profile-pic' src='$user_profile_pic'/></a>
+                    <a href='profile.php?profile_handle=$poster_handle' style='padding-right:1%;'><img class='post-profile-pic' src='$user_profile_pic'/></a>
                     <div class='post-content'>
                         <div class='post-user-name'><a href='profile.php?profile_handle=$poster_handle'>$user_name</a></div>
                         <div class='post-time'><b>$time_of_post</b></div><br>
