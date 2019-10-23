@@ -61,7 +61,7 @@ class Post {
                 "<div class='post' onclick='javascript:toggle$id()'>
                     <img class='index-profile-pic' src='$user_profile_pic'/>
                     <div class='index-content'>
-                        <div class='index-user-name'><a href='$poster_handle'>$poster_name</a></div>
+                        <div class='index-user-name'><a href='profile.php?profile_handle=$poster_handle'>$poster_name</a></div>
                         <div class='index-time'>$time_of_post</div><br>
                         <div class='index-text'>$text</div>
                     </div>
@@ -152,7 +152,7 @@ class Post {
                 "<div class='post' onclick='javascript:toggle$id()'>
                     <img class='index-profile-pic' src='$user_profile_pic'/>
                     <div class='index-content'>
-                        <div class='index-user-name'><a href='$poster_handle'>$poster_name</a></div>
+                        <div class='index-user-name'><a href='profile.php?profile_handle=$poster_handle'>$poster_name</a></div>
                         <div class='index-time'>$time_of_post</div><br>
                         <div class='index-text'>$text</div>
                     </div>
