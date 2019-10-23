@@ -26,11 +26,11 @@
     <div id="about" style="display:none">
         <br>
         <h1 class="glow classy-font">
-            <center>Welcome to My Site</center>
+            <center>Welcome to PalWeb!</center>
         </h1>
         <br>
         <div class="about-info">
-            This is a personal project which is a replica of Facebook. It was built with PHP and JavaScript at the back-end, and 
+            This is a personal project sociak media website which is a replica of Facebook. It was built with PHP and JavaScript at the back-end, and 
             HTML & CSS at the front-end.<br><br>
             You can perform all features of a social media site, including sign-up and login, posts, messages, notifications,
             friend connections, and so on. I also designed the database system for this project, and ensured ACID properties.<br><br>
