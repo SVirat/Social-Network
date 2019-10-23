@@ -60,7 +60,7 @@ if(isset($_POST["send_message"])) {
     <img src="<?php echo $profile_prof_pic;?>" >
     <div id='profile-name'><?php echo $profile_name;?></div>
 
-    <form action=<?php echo $profile_handle; ?> method="POST">
+    <form action="profile.php?profile_handle=<?php echo $profile_handle; ?>" method="POST">
     <?php
         $friend_obj = new Friend($con, $user['handle']);
         if($user['handle'] != $profile_handle) {
