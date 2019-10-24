@@ -8,11 +8,12 @@
 <!doctype html>
 <html>
     <head>
-    <script src="js/door.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <script src="js/door.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
         <title>PalWeb</title>
         <link rel="stylesheet" type="text/css" href="./css/door.css">
+        <link rel="icon" href="assets/img/icons/favicon.ico">
     </head>
 
 <body>
