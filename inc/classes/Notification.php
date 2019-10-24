@@ -32,9 +32,23 @@ class Notification {
             case "other_post_comment":
                 $message = $user_name . " commented on a vibe.";
                 break;
+            case "friend_accept":
+                $message = $user_name . " accepted your friend request.";
+                break;
+            case "friend_received":
+                $message = $user_name . " sent you a friend request.";
+                break;
         } 
 
-        $link = "post.php?id=" . $post_id;
+        if($type == "friend_accept") {
+            $link = "profile.php?profile_handle=" . $user_handle;
+        }
+        else if($type == "friend_received") {
+            $link = "pending_friends.php";
+        }
+        else {
+            $link = "post.php?id=" . $post_id;
+        }
 
         $insert = mysqli_query($this->con, "INSERT INTO notification VALUES('', '$receiver_handle', '$user_handle', '$message', '$link', '$time', 'n');");
 
