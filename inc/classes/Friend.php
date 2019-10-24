@@ -1,5 +1,4 @@
-<?php 
-include_once 'Notification.php';
+<?php
 
 class Friend {
     private $con;
