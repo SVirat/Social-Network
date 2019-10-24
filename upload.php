@@ -1,15 +1,13 @@
 <?php 
 require('vendor/autoload.php');
-include("inc/header.php");
+include ("inc/header.php");
 include ("inc/classes/User.php");
-
 // this will simply read AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY from env vars
 $s3 = new Aws\S3\S3Client([
     'version'  => '2006-03-01',
     'region'   => 'us-east-1',
 ]);
 $bucket = getenv('S3_BUCKET')?: die('No "S3_BUCKET" config var in found in env!');
-
 $user_handle =  $user['handle'];
 $target_dir = "assets/img/user_prof_pics/$user_handle/";
 if (!file_exists($target_dir)) {
@@ -36,7 +34,6 @@ if (file_exists($target_file)) {
     $uploadOk = 0;
 }
 */
-
 // Check file size
 if ($_FILES["fileToUpload"]["size"] > 500000) {
     echo "Sorry, your file is too large.";
@@ -56,7 +53,6 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
         $upload = $s3->upload($bucket, $_FILES['userfile']['name'], fopen($_FILES['userfile']['tmp_name'], 'rb'), 'public-read');
-?>
         $user_obj = new User($con, $user_handle);
         $user_obj->set_profile_pic("./" . $target_dir . basename( $_FILES["fileToUpload"]["name"]));
         header("Location: settings.php");
