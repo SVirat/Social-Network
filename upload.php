@@ -1,5 +1,5 @@
 <?php 
-require('vendor/autoload.php');
+require ('vendor/autoload.php');
 include ("inc/header.php");
 include ("inc/classes/User.php");
 // this will simply read AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY from env vars
