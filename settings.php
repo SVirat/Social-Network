@@ -47,22 +47,30 @@ if(isset($_POST["email-change"])) {
 }
 
 if(isset($_POST["password-change"])) {
-    $password = $_POST["password-change-1"];
-    $password1 = $_POST["password-change-2"];
-
-    if(strcmp($password, $password1) == 0) {
-        if(strlen($password) < 8 || strlen($password) > 50) {
-            array_push($errors, "Password must be between 8 and 50 characters.");
-        }
-        else {
-            $password = md5($password);
-            $password_change = mysqli_query($con, "UPDATE user SET password='$password' WHERE handle='$user_handle';");
-            header("Location: door.php");
-            exit();
-        }
+    
+    if($user_handle == "visiter") {
+        echo '<script language="javascript">';
+        echo 'alert("Password change is disabled for the visiter profile.")';
+        echo '</script>';
     }
     else {
-        array_push($errors, "Passwords do not match.");
+        $password = $_POST["password-change-1"];
+        $password1 = $_POST["password-change-2"];
+
+        if(strcmp($password, $password1) == 0) {
+            if(strlen($password) < 8 || strlen($password) > 50) {
+                array_push($errors, "Password must be between 8 and 50 characters.");
+            }
+            else {
+                $password = md5($password);
+                $password_change = mysqli_query($con, "UPDATE user SET password='$password' WHERE handle='$user_handle';");
+                header("Location: door.php");
+                exit();
+            }
+        }
+        else {
+            array_push($errors, "Passwords do not match.");
+        }
     }
 }
 
