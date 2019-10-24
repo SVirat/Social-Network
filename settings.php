@@ -48,9 +48,9 @@ if(isset($_POST["email-change"])) {
 
 if(isset($_POST["password-change"])) {
     
-    if($user_handle == "visiter") {
+    if($user_handle == "visiter" || $user_handle == "visitor") {
         echo '<script language="javascript">';
-        echo 'alert("Password change is disabled for the visiter profile.")';
+        echo 'alert("Password change is disabled for the visitor profile.")';
         echo '</script>';
     }
     else {
@@ -75,9 +75,9 @@ if(isset($_POST["password-change"])) {
 }
 
 if(isset($_POST["deactivate"])) {
-    if($user_handle == "visiter") {
+    if($user_handle == "visiter" || $user_handle == "visitor") {
         echo '<script language="javascript">';
-        echo 'alert("Deactivation is disabled for the visiter profile.")';
+        echo 'alert("Deactivation is disabled for the visitor profile.")';
         echo '</script>';
     }
     else {
@@ -87,9 +87,9 @@ if(isset($_POST["deactivate"])) {
 }
 
 if(isset($_POST["delete"])) { 
-    if($user_handle == "visiter") {
+    if($user_handle == "visiter" || $user_handle == "visitor") {
         echo '<script language="javascript">';
-        echo 'alert("Deletion is disabled for the visiter profile.")';
+        echo 'alert("Deletion is disabled for the visitor profile.")';
         echo '</script>';
     }
     else {
