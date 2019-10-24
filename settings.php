@@ -26,18 +26,17 @@ if(isset($_POST["handle-change"])) {
         array_push($errors, "Handles do not match.");
     }
     else {
-            $handle1 = strip_tags($handle1);
-            if(mysqli_num_rows(mysqli_query($con, "SELECT handle FROM user WHERE handle='$handle1'")) > 0) {
-                array_push($errors, "Handle already exists.");
-            }
-            else if(strlen($handle1) < 3 || strlen($handle1) > 30) {
-                array_push($errors, "Handle must be between 3 and 30 characters.");
-            }
-            else {
-                $email_change = mysqli_query($con, "UPDATE user SET handle='$handle1' WHERE handle='$user_handle';");
-                header("Location: settings.php");
-                exit();
-            }
+        $handle1 = strip_tags($handle1);
+        if(mysqli_num_rows(mysqli_query($con, "SELECT handle FROM user WHERE handle='$handle1'")) > 0) {
+            array_push($errors, "Handle already exists.");
+        }
+        else if(strlen($handle1) < 3 || strlen($handle1) > 30) {
+            array_push($errors, "Handle must be between 3 and 30 characters.");
+        }
+        else {
+            $email_change = mysqli_query($con, "UPDATE user SET handle='$handle1' WHERE handle='$user_handle';");
+            header("Location: settings.php");
+            exit();
         }
     }
 }
