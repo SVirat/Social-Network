@@ -64,7 +64,7 @@
         <table>
             <tr>
                 <td><b>Handle: </b>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td>visiter</td>
+                <td>visitor</td>
             </tr>
             <tr>
                 <td><b>Password: &nbsp;&nbsp;&nbsp;&nbsp;</b></td>
