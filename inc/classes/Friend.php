@@ -29,14 +29,14 @@ class Friend {
         $time = date("Y-m-d H:i:s");
         $sender = mysqli_query($this->con, "INSERT INTO friend VALUES('', '$this->user_handle', '$other_handle', 'n', '$time');");
         $notification_obj = new Notification($this->con, $user_handle);
-        $notification_obj->insert_notification("0", $other_handle, "friend_received");
+        $notification_obj->insert_notification(1, $other_handle, "friend_received");
     }
 
     public function accept_friend_request($other_handle) {
         $time = date("Y-m-d H:i:s");
         $accepter = mysqli_query($this->con, "UPDATE friend SET accepted='y', time='$time' WHERE sender_handle='$other_handle' AND receiver_handle='$this->user_handle';");
         $notification_obj = new Notification($this->con, $user_handle);
-        $notification_obj->insert_notification("0", $other_handle, "friend_accept");
+        $notification_obj->insert_notification(1, $other_handle, "friend_accept");
     }
 
     public function delete_friend($other_handle) {
