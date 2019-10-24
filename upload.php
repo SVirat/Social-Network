@@ -1,20 +1,5 @@
-<?php 
-require ('vendor/autoload.php');
-include ("inc/header.php");
+<?php include("inc/header.php");
 include ("inc/classes/User.php");
-
-// this will simply read AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY from env vars
-$s3 = new Aws\S3\S3Client([
-    'version'  => 'latest',
-    'region'   => 'ap-south-1',
-    'credentials' => [
-        'key' => 'AKIAJ2ETVOPSV46W2MRA',
-        'secret' => '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'
-    ]
-]);
-
-$bucket_name = "viratsingh-palweb-img";
-
 $user_handle =  $user['handle'];
 $target_dir = "assets/img/user_prof_pics/$user_handle/";
 if (!file_exists($target_dir)) {
@@ -59,14 +44,8 @@ if ($uploadOk == 0) {
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-        $result = $s3->putObject([
-            'Bucket' => $bucket_name,
-            'Key' => $_FILES['fileToUpload']['name'],
-            'Body' => fopen("./" . $target_dir . basename( $_FILES["fileToUpload"]["name"]), 'rb'),
-            'ACL' => 'public-read'
-        ]);
         $user_obj = new User($con, $user_handle);
-        $user_obj->set_profile_pic($result->get("ObjectURL"));
+        $user_obj->set_profile_pic("./" . $target_dir . basename( $_FILES["fileToUpload"]["name"]));
         header("Location: settings.php");
         exit();
     } else {
