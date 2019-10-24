@@ -31,7 +31,7 @@
         <br>
         <div class="about-info">
             PalWeb is a personal project inspired by sites like Facebook and Twitter, made specifically for programmers and engineers 
-            to get feedback or help on their personal projects, share their opinions on the industry, or simply to expand their network.
+            to get feedback or help on their personal projects, share their opinions on the industry, or simply expand their network.
             Features include activities such as adding and deleting posts and comments, liking other posts, adding and removing friends, 
             calculating mutual friends, receiving notifications, searching for other users, and so on.<br><br>
             It was built in the back-end with PHP and JavaScript, and in the front-end with HTML and CSS. Ajax calls are used to 
