@@ -18,29 +18,6 @@ if(isset($_POST["last-name-change"])) {
     exit();
 }
 
-if(isset($_POST["handle-change"])) {
-    $handle1 = $_POST["handle-change-1"];
-    $handle2 = $_POST["handle-change-2"];
-
-    if(strcmp($handle1, $handle2) != 0) {
-        array_push($errors, "Handles do not match.");
-    }
-    else {
-        $handle1 = strip_tags($handle1);
-        if(mysqli_num_rows(mysqli_query($con, "SELECT handle FROM user WHERE handle='$handle1'")) > 0) {
-            array_push($errors, "Handle already exists.");
-        }
-        else if(strlen($handle1) < 3 || strlen($handle1) > 30) {
-            array_push($errors, "Handle must be between 3 and 30 characters.");
-        }
-        else {
-            $email_change = mysqli_query($con, "UPDATE user SET handle='$handle1' WHERE handle='$user_handle';");
-            header("Location: settings.php");
-            exit();
-        }
-    }
-}
-
 if(isset($_POST["email-change"])) {
     $email1 = $_POST["email-change-1"];
     $email2 = $_POST["email-change-2"];
@@ -147,18 +124,7 @@ if(isset($_POST["delete"])) {
         <input type='submit' value='Change' class="changer-button" name='last-name-change'>
     </form>
     <br>
-    
-    <div id="handle-change-announcer"><b>Change Handle</b></div><br>
-    <form method="POST" class="handle-changer">
-        <b>New Handle:</b> <input type="text" name="handle-change-1" class="field-long" placeholder="New Handle"><br>
-        <b>New Handle:</b> <input type="text" name="handle-change-2" class="field-long" placeholder="Retype New Handle"><br>
-        <input type='submit' value='Change' class="changer-button" name='handle-change'>
-    </form>
-    <?php if(in_array("Handles do not match.", $errors)) echo "Handles do not match.<br>"?>
-    <?php if(in_array("Handle already exists.", $errors)) echo "Handle already exists.<br>"?>
-    <?php if(in_array("Handle must be between 3 and 30 characters.", $errors)) echo "Handle must be between 3 and 30 characters.<br>"?>
-    
-    <br>
+   
     <div id="email-change-announcer"><b>Change Email</b></div><br>
     <form method="POST" class="email-changer">
         <b>New Email:</b> <input type="text" name="email-change-1" class="field-long" placeholder="New Email"><br>
