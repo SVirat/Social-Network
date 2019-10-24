@@ -76,13 +76,13 @@ else {
             <a href="javascript:void(0);" onclick="getDropdownData('<?php echo $user_handle; ?>');" id="messages"><i class="fa fa-comments fa-lg"></i></a>
             <?php
                 if($num_messages > 0) {
-                    echo "<span class='message-badge' id='unread-messages'>" . $num_messages . "</span>";
+                    echo "<span class='message-badge' onclick='getDropdownData("."\"".$user_handle."\"".");' id='unread-messages'>" . $num_messages . "</span>";
                 }
             ?>
             <a href="javascript:void(0);" onclick="getDropdownNotifications('<?php echo $user_handle; ?>');" id="notifications"><i class="fa fa-bell fa-lg"></i>
             <?php
                 if($num_notifications > 0) {
-                    echo "<span class='notification-badge' id='unread-notifications'>" . $num_notifications . "</span>";
+                     echo "<span class='notification-badge' onclick='getDropdownNotifications(" . $user_handle . ");' id='unread-notifications'>" . $num_notifications . "</span>";
                 }
             ?>
             </a>
