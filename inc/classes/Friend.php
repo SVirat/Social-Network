@@ -16,8 +16,6 @@ class Friend {
     public function sent_friend_request($other_handle) {
         $sent_friend = mysqli_num_rows(mysqli_query($this->con, "SELECT * FROM friend WHERE receiver_handle='$other_handle' AND 
                                                                 sender_handle='$this->user_handle' AND accepted='n';"));
-        $notification_obj = new Notification($this->con, $user_handle);
-        $notification_obj->insert_notification("0", $other_handle, "friend_received");
         return $sent_friend != 0;
     }
 
@@ -30,6 +28,8 @@ class Friend {
     public function send_friend_request($other_handle) {
         $time = date("Y-m-d H:i:s");
         $sender = mysqli_query($this->con, "INSERT INTO friend VALUES('', '$this->user_handle', '$other_handle', 'n', '$time');");
+        $notification_obj = new Notification($this->con, $user_handle);
+        $notification_obj->insert_notification("0", $other_handle, "friend_received");
     }
 
     public function accept_friend_request($other_handle) {
