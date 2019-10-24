@@ -38,6 +38,7 @@ else {
     <link rel="stylesheet" type="text/css" href="./css/settings.css">
     <link rel="stylesheet" type="text/css" href="./css/post.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="icon" href="../assets/img/icons/favicon.ico">
 
     <title>PalWeb</title>
 
