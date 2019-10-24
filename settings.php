@@ -67,13 +67,27 @@ if(isset($_POST["password-change"])) {
 }
 
 if(isset($_POST["deactivate"])) {
-    $deactivate = mysqli_query($con, "UPDATE user SET deactivated='y' WHERE handle='$handle'");
-    header("Location: door.php");
+    if($user_handle == "visiter") {
+        echo '<script language="javascript">';
+        echo 'alert("Deactivation is disabled for the visiter profile.")';
+        echo '</script>';
+    }
+    else {
+        $deactivate = mysqli_query($con, "UPDATE user SET deactivated='y' WHERE handle='$handle'");
+        header("Location: door.php");
+    }
 }
 
-if(isset($_POST["delete"])) {
-    $delete = mysqli_query($con, "DELETE FROM user WHERE handle='$user_handle';");
-    header("Location: door.php");
+if(isset($_POST["delete"])) { 
+    if($user_handle == "visiter") {
+        echo '<script language="javascript">';
+        echo 'alert("Deletion is disabled for the visiter profile.")';
+        echo '</script>';
+    }
+    else {
+        $delete = mysqli_query($con, "DELETE FROM user WHERE handle='$user_handle';");
+        header("Location: door.php");
+    }
 }
 
 ?>
