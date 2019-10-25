@@ -84,3 +84,7 @@ TABLE notification {
 ```
 
 This ensures that any information required can be easily procured with no more than a few nested queries, and it also guarantees consistency as no information is being stored redundantly.
+
+## Amazon Web Services: S3 Bucket
+
+Because Heroku has an ephemeral file system, all user uploaded photos are wiped clean every few hours. To persistently store user photos, we use an AWS S3 bucket. Photos uploaded on PalWeb are direct-uploaded to an S3 bucket, from which the photos are then retrieved.
