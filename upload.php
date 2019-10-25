@@ -1,4 +1,5 @@
-<?php include("inc/header.php");
+<?php 
+include("inc/header.php");
 include ("inc/classes/User.php");
 $user_handle =  $user['handle'];
 $target_dir = "assets/img/user_prof_pics/$user_handle/";
