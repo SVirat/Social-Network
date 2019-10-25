@@ -5,17 +5,31 @@ $user_handle = $user["handle"];
 $errors = array();
 
 if(isset($_POST["first-name-change"])) {
-    $new_name = $_POST["firstname-change"];
-    $changer = mysqli_query($con, "UPDATE user SET first_name='$new_name' WHERE handle='$user_handle';");
-    header("Location: settings.php");
-    exit();
+    if($user_handle == "visiter" || $user_handle == "visitor") {
+        echo '<script language="javascript">';
+        echo 'alert("Name change is disabled for the visitor profile.")';
+        echo '</script>';
+    }
+    else {
+        $new_name = $_POST["firstname-change"];
+        $changer = mysqli_query($con, "UPDATE user SET first_name='$new_name' WHERE handle='$user_handle';");
+        header("Location: settings.php");
+        exit();
+    }
 }
 
 if(isset($_POST["last-name-change"])) {
-    $new_name = $_POST["lastname-change"];
-    $changer = mysqli_query($con, "UPDATE user SET last_name='$new_name' WHERE handle='$user_handle';");
-    header("Location: settings.php");
-    exit();
+    if($user_handle == "visiter" || $user_handle == "visitor") {
+        echo '<script language="javascript">';
+        echo 'alert("Name change is disabled for the visitor profile.")';
+        echo '</script>';
+    }
+    else {
+        $new_name = $_POST["lastname-change"];
+        $changer = mysqli_query($con, "UPDATE user SET last_name='$new_name' WHERE handle='$user_handle';");
+        header("Location: settings.php");
+        exit();
+    }
 }
 
 if(isset($_POST["email-change"])) {
