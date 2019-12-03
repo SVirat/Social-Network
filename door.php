@@ -40,7 +40,7 @@
             with an emphasis on minimizing redundancy and maximizing consistency.<br><br>
             To see the full code base and view the DBMS schema, visit the <a href="https://github.com/SVirat/social-network" target="_blank">github repo</a>. 
             <br><br>
-            <!-- To learn more about me and my profile, visit my personal portfolio site: <a href="https://svirat.github.io" target="_blank">svirat.github.io</a>. -->
+            To learn more about me and my profile, visit my personal portfolio site: <a href="https://viratsingh.me" target="_blank">viratsingh.me</a>.
         </div>
     </div>
 
