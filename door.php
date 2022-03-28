@@ -61,6 +61,7 @@
         </form>
 
         <br><br>
+        Designed & Developed by <b>Virat Singh</b><br>
         If you simply want to test the site, use the following credentials:<br>
         <table>
             <tr>
